@@ -21,9 +21,9 @@
             <div class="card-header bg-dark">
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary" title="Add Employee" data-toggle="modal" data-target="#emp_form"><i class="fa-solid fa-plus"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Salary"><i class="fa-solid fa-coins"></i></button>
-                    <button type="button" class="btn btn-secondary" title="Leave"><i class="fa-solid fa-business-time"></i></i></button>
-                    <button type="button" class="btn btn-secondary" title="Loan"><i class="fa-solid fa-comment-dollar"></i></button>
+                    <button type="button" disabled class="btn btn-secondary" title="Salary"><i class="fa-solid fa-coins"></i></button>
+                    <button type="button" disabled class="btn btn-secondary" title="Leave"><i class="fa-solid fa-business-time"></i></i></button>
+                    <button type="button" disabled class="btn btn-secondary" title="Loan"><i class="fa-solid fa-comment-dollar"></i></button>
                 </div>
             </div>
             <div class="card-body">

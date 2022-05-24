@@ -73,6 +73,88 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fa-solid fa-handcuffs"></i>
+                        <p>
+                            Policies
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('employee') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fa-solid fa-chart-pie"></i>
+                        <p>
+                            Reports
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('employee') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Payroll</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-header">EMPLOYEE</li>
                 <li class="nav-item @yield('emp-menu-open')">
                     <a href="#" class="nav-link @yield('emp-active')">
@@ -109,7 +191,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tree"></i>
                         <p>
@@ -231,38 +313,37 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-header">AUTHENTICATION</li>
+                </li> --}}
+                <li class="nav-header">PERFORMANCE</li>
                 <li class="nav-item">
-                    <a href="pages/calendar.html" class="nav-link">
-                        <i class="nav-icon fas fa-calendar-alt"></i>
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fa-solid fa-bullhorn"></i>
                         <p>
-                            Calendar
-                            <span class="badge badge-info right">2</span>
+                            Promotion
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="pages/gallery.html" class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
+                        <i class="nav-icon fa-solid fa-people-pulling"></i>
                         <p>
-                            Gallery
+                            Resignation
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="pages/kanban.html" class="nav-link">
-                        <i class="nav-icon fas fa-columns"></i>
+                        <i class="nav-icon fa-solid fa-folder-minus"></i>
                         <p>
-                            Kanban Board
+                            Termination
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-envelope"></i>
+                        <i class="nav-icon fa-solid fa-signal"></i>
                         <p>
-                            Mailbox
+                            Performance
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -291,7 +372,7 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
-                            Pages
+                            Goals
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -360,9 +441,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-plus-square"></i>
+                        <i class="nav-icon fa-solid fa-people-robbery"></i>
                         <p>
-                            Extras
+                            Training
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -487,43 +568,14 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-search"></i>
-                        <p>
-                            Search
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="pages/search/simple.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Simple Search</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/search/enhanced.html" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Enhanced</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-header">MISCELLANEOUS</li>
+                {{-- <li class="nav-header">MISCELLANEOUS</li>
                 <li class="nav-item">
                     <a href="iframe.html" class="nav-link">
                         <i class="nav-icon fas fa-ellipsis-h"></i>
                         <p>Tabbed IFrame Plugin</p>
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-                        <i class="nav-icon fas fa-file"></i>
-                        <p>Documentation</p>
-                    </a>
-                </li>
-                <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+                </li> --}}
+                {{-- <li class="nav-header">MULTI LEVEL EXAMPLE</li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fas fa-circle nav-icon"></i>
@@ -587,21 +639,22 @@
                         <i class="fas fa-circle nav-icon"></i>
                         <p>Level 1</p>
                     </a>
+                </li> --}}
+                <li class="nav-header">Account</li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fa-solid fa-gear"></i>
+                        <p>Settings</p>
+                    </a>
                 </li>
-                <li class="nav-header">Sign Out</li>
-                <li class="nav-item menu-open">
+                <li class="nav-item">
                     <a href="{{ route('admin.logout') }}" class="nav-link">
                         <i class="text-danger nav-icon fa-solid fa-right-from-bracket"></i>
                         <p class="text">Log out</p>
                     </a>
                 </li>
+
                 {{-- <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-circle text-warning"></i>
-                        <p>Warning</p>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon far fa-circle text-info"></i>
                         <p>Informational</p>
