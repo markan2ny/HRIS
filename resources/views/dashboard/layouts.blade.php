@@ -30,6 +30,8 @@
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
+        <!-- Preloader -->
+        @include('dashboard.preloader')
         <!-- Navbar -->
         @include('dashboard.nav')
         <!-- /.navbar -->

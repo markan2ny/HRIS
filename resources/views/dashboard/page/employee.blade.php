@@ -23,7 +23,7 @@
             </div>
             <div class="card-body">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-success" title="Add Employee"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" class="btn btn-success" title="Add Employee" data-toggle="modal" data-target="#emp_form"><i class="fa-solid fa-plus"></i></button>
                     <button type="button" class="btn btn-warning" title="Salary"><i class="fa-solid fa-coins"></i></button>
                     <button type="button" class="btn btn-info" title="Leave"><i class="fa-solid fa-plane-departure"></i></button>
                     <button type="button" class="btn btn-primary" title="Loan"><i class="fa-solid fa-comment-dollar"></i></button>
@@ -58,12 +58,12 @@
                             </th>
                             <th>
                                 <small class="font-weight-bold">
-                                    DESIGNATION
+                                    ADDRESS
                                 </small>
                             </th>
                             <th>
                                 <small class="font-weight-bold">
-                                    EMPLOYMENT
+                                    DATE OF HIRED
                                 </small>
                             </th>
                             <th>
@@ -74,43 +74,27 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1001</td>
-                            <td>MARK ANTHONY PASCUAL</td>
-                            <td>HEAD OFFICE</td>
-                            <td>BALIUAG</td>
-                            <td>ADMIN</td>
-                            <td>PRESIDENT</td>
-                            <td>PRESIDENT</td>
-                            <td>ACTIVE</td>
-                        </tr>
-                        <tr>
-                            <td>1002</td>
-                            <td>JUAN DELA CRUZ</td>
-                            <td>HEAD OFFICE</td>
-                            <td>BALIUAG</td>
-                            <td>ADMIN</td>
-                            <td>PRESIDENT</td>
-                            <td>PRESIDENT</td>
-                            <td>ACTIVE</td>
-                        </tr>
-                        <tr>
-                            <td>1003</td>
-                            <td>MARK ANTHONY PASCUAL</td>
-                            <td>HEAD OFFICE</td>
-                            <td>BALIUAG</td>
-                            <td>ADMIN</td>
-                            <td>PRESIDENT</td>
-                            <td>PRESIDENT</td>
-                            <td>ACTIVE</td>
-                        </tr>
+                       @forelse ($employee as $emp)
+                            <tr>
+                                <td>{{ $emp->idcode }}</td>
+                                <td>{{ $emp->full_name }}</td>
+                                <td>{{ $emp->gender }}</td>
+                                <td>{{ $emp->civil_status }}</td>
+                                <td>{{ $emp->department }}</td>
+                                <td>{{ $emp->address }}</td>
+                                <td>{{ $emp->date_hired }}</td>
+                                <td>{{ $emp->employee_status }}</td>
+                            </tr>
+                       @empty
+
+                       @endforelse
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
-
+@include('dashboard.modal.add_emp')
 @endsection
 
 @push('script')
@@ -142,7 +126,7 @@
         "autoWidth": true,
         "responsive": true,
         "scrollX": true
-      });
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     });
 </script>
 @endpush
