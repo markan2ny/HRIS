@@ -125,7 +125,7 @@
 <script>
     $(function () {
       $("#mytable").DataTable({
-        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "responsive": true, "lengthChange": true, "autoWidth": false, "pageLength": 15,
         "buttons": ["copy", "csv", "excel", "pdf", "print",] //"colvis"]
       }).buttons().container().appendTo('#mytable_wrapper .col-md-6:eq(0)');
     //   $('#example1').DataTable({
