@@ -10,6 +10,6 @@ class Employee extends Model
     use HasFactory;
 
     public function getFullNameAttribute() {
-        return "$this->lastname, $this->firstname $this->middlename ";
+        return "$this->lastname, $this->firstname $this->middlename. ";
     }
 }
