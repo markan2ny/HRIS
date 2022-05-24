@@ -31,7 +31,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-header">HR</li>
+                <li class="nav-header">HUMAN RESOURCES</li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fa-solid fa-sack-dollar"></i>
